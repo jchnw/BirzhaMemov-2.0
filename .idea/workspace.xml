@@ -6,9 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d8c2d409-9c41-4e72-9461-b82eecc2b2a4" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/entities/Pictures.java" afterPath="$PROJECT_DIR$/src/main/java/app/entities/Pictures.java" />
-    </list>
+    <list default="true" id="d8c2d409-9c41-4e72-9461-b82eecc2b2a4" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,8 +21,8 @@
       <file leaf-file-name="Pictures.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/app/entities/Pictures.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="693">
-              <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+            <state relative-caret-position="147">
+              <caret line="7" column="26" lean-forward="true" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
               <folding>
                 <element signature="e#1015#1016#0" expanded="true" />
                 <element signature="e#1045#1046#0" expanded="true" />
@@ -376,12 +374,12 @@
       <updated>1514469172783</updated>
       <workItem from="1514469184884" duration="4581000" />
       <workItem from="1514475521675" duration="247000" />
-      <workItem from="1514499728609" duration="3785000" />
+      <workItem from="1514499728609" duration="4389000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8613000" />
+    <option name="totallyTimeSpent" value="9217000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1098" extended-state="7" />
@@ -639,8 +637,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/app/entities/Pictures.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="693">
-          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+        <state relative-caret-position="147">
+          <caret line="7" column="26" lean-forward="true" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
           <folding>
             <element signature="e#1015#1016#0" expanded="true" />
             <element signature="e#1045#1046#0" expanded="true" />

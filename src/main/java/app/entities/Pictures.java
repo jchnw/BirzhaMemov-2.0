@@ -5,10 +5,12 @@ import app.entities.Users;
 
 public class Pictures {
     private Long picture_id;
-    private String name;
+    //private String name;
+    //test
     private byte[] imageData;
     private String imageFileName;
     private Long user_id;
+    private Long picture_likes;
 
 
     public Pictures() {
@@ -16,11 +18,14 @@ public class Pictures {
     }
 
 
-    public Pictures(Long picture_id, String name, byte[] imageData, String imageFileName) {
+    public Pictures(Long picture_likes, Long user_id, Long picture_id,  byte[] imageData, String imageFileName) {
         this.picture_id = picture_id;
-        this.name = name;
+        //this.name = name;
         this.imageData = imageData;
         this.imageFileName = imageFileName;
+        this.user_id = user_id;
+        this.picture_likes = picture_likes;
+
     }
 
     public Long getPicture_id() {
@@ -31,6 +36,14 @@ public class Pictures {
         this.picture_id = picture_id;
     }
 
+    public Long getPicture_likes() {
+        return picture_likes;
+    }
+
+    public void setPicture_likes(Long picture_likes) {
+        this.picture_likes = picture_likes;
+    }
+
     public Long getUser_id() {
         return user_id;
     }
@@ -39,13 +52,13 @@ public class Pictures {
         this.user_id = user_id;
     }
 
-    public String getName() {
-        return name;
-    }
+   /* //public String getName() {
+       // return name;
+   // }
 
-    public void setName(String name) {
-        this.name = name;
-    }
+    //public void setName(String name) {
+      //  this.name = name;
+    *///}
 
 
     public byte[] getImageData() {

@@ -12,8 +12,8 @@
 </div>
     <div style="float: right; padding: 10px; text-align: right;">
 
-        <!-- User store in session with attribute: loginedUser -->
-        Hello <b>${loginedUser.userName}</b>
+        <!-- Users store in session with attribute: loginedUsers -->
+        Hello <b>${loginedUsers.userName}</b>
         <br/>
         Search <input name="search">
 

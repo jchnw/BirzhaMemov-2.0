@@ -13,9 +13,7 @@ public class Pictures {
     private Long picture_likes;
 
 
-    public Pictures() {
-
-    }
+    public Pictures() {}
 
 
     public Pictures(Long picture_likes, Long user_id, Long picture_id,  byte[] imageData, String imageFileName) {

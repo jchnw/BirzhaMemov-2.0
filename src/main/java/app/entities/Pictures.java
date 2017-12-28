@@ -17,9 +17,9 @@ public class Pictures {
     }
 
 
-    public Pictures(Long picture_id, String name, byte[] imageData, String imageFileName) {
+    public Pictures(Long user_id, Long picture_id,  byte[] imageData, String imageFileName) {
         this.picture_id = picture_id;
-        this.name = name;
+        //this.name = name;
         this.imageData = imageData;
         this.imageFileName = imageFileName;
     }
@@ -40,13 +40,13 @@ public class Pictures {
         this.user_id = user_id;
     }
 
-    public String getName() {
-        return name;
-    }
+   /* //public String getName() {
+       // return name;
+   // }
 
-    public void setName(String name) {
-        this.name = name;
-    }
+    //public void setName(String name) {
+      //  this.name = name;
+    *///}
 
 
     public byte[] getImageData() {

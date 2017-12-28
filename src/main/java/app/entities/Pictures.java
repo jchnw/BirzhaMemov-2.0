@@ -22,6 +22,8 @@ public class Pictures {
         //this.name = name;
         this.imageData = imageData;
         this.imageFileName = imageFileName;
+        this.user_id = user_id;
+
     }
 
     public Long getPicture_id() {

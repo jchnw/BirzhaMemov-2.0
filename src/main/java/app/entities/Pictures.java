@@ -5,7 +5,7 @@ import app.entities.Users;
 
 public class Pictures {
     private Long picture_id;
-    private String name;
+    //private String name;
     private byte[] imageData;
     private String imageFileName;
     private Long user_id;

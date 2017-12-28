@@ -1,6 +1,6 @@
 package app.filter;
 
-import app.entities.User;
+import app.entities.Users;
 import app.utils.DBUtils;
 import app.utils.MyUtils;
 
@@ -41,9 +41,9 @@ public class CookieFilter implements Filter {
         HttpServletRequest req = (HttpServletRequest) request;
         HttpSession session = req.getSession();
 
-        User userInSession = MyUtils.getLoginedUser(session);
+        Users usersInSession = MyUtils.getLoginedUser(session);
         //
-        if (userInSession != null) {
+        if (usersInSession != null) {
             session.setAttribute("COOKIE_CHECKED", "CHECKED");
             chain.doFilter(request, response);
             return;
@@ -57,8 +57,8 @@ public class CookieFilter implements Filter {
         if (checked == null && conn != null) {
             String userName = MyUtils.getUserNameInCookie(req);
             try {
-                User user = DBUtils.findUser(conn, userName);
-                MyUtils.storeLoginedUser(session, user);
+                Users users = DBUtils.findUser(conn, userName);
+                MyUtils.storeLoginedUser(session, users);
             } catch (SQLException e) {
                 e.printStackTrace();
             }

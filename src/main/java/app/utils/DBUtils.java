@@ -1,7 +1,7 @@
 package app.utils;
 
 
-import app.entities.User;
+import app.entities.Users;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -10,8 +10,8 @@ import java.sql.SQLException;
 
 public class DBUtils {
 
-    public static User findUser(Connection conn, //
-                                String userName, String password) throws SQLException {
+    public static Users findUser(Connection conn, //
+                                 String userName, String password) throws SQLException {
 
         String sql = "Select a.User_Name, a.Password, a.Gender from User_Account a " //
                 + " where a.User_Name = ? and a.password= ?";
@@ -23,15 +23,15 @@ public class DBUtils {
 
         if (rs.next()) {
 
-            User user = new User();
-            user.setLogin(userName);
-            user.setPassword(password);
-            return user;
+            Users users = new Users();
+            users.setLogin(userName);
+            users.setPassword(password);
+            return users;
         }
         return null;
     }
 
-    public static User findUser(Connection conn, String userName) throws SQLException {
+    public static Users findUser(Connection conn, String userName) throws SQLException {
 
         String sql = "Select a.User_Name, a.Password,  from User_Account a "//
                 + " where a.User_Name = ? ";
@@ -43,10 +43,10 @@ public class DBUtils {
 
         if (rs.next()) {
             String password = rs.getString("Password");
-            User user = new User();
-            user.setLogin(userName);
-            user.setPassword(password);
-            return user;
+            Users users = new Users();
+            users.setLogin(userName);
+            users.setPassword(password);
+            return users;
         }
         return null;
     }

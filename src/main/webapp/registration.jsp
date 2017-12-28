@@ -25,12 +25,12 @@
 
     <div class='form-row'>
         <label>Meme Name:</label>
-        <input type="text" name="login" value="${user.login}"><br />
+        <input type="text" name="login" value="${users.login}"><br />
     </div>
 
     <div class='form-row'>
         <label>Password: </label>
-        <input type="password" name="password" value="${user.password}">
+        <input type="password" name="password" value="${users.password}">
     </div>
 
     <div class="form-row">

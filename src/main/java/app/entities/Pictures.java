@@ -1,18 +1,22 @@
 package app.entities;
 
-public class Memes {
+import app.entities.Users;
+
+
+public class Pictures {
     private Long picture_id;
     private String name;
     private byte[] imageData;
     private String imageFileName;
+    private Long user_id;
 
 
-    public Memes() {
+    public Pictures() {
 
     }
 
 
-    public Memes(Long picture_id, String name, byte[] imageData, String imageFileName) {
+    public Pictures(Long picture_id, String name, byte[] imageData, String imageFileName) {
         this.picture_id = picture_id;
         this.name = name;
         this.imageData = imageData;
@@ -25,6 +29,14 @@ public class Memes {
 
     public void setPicture_id(Long picture_id) {
         this.picture_id = picture_id;
+    }
+
+    public Long getUser_id() {
+        return user_id;
+    }
+
+    public void setUser_id(Long user_id) {
+        this.user_id = user_id;
     }
 
     public String getName() {

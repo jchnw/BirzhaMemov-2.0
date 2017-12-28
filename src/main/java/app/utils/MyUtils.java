@@ -1,6 +1,6 @@
 package app.utils;
 
-import app.entities.User;
+import app.entities.Users;
 
 import javax.servlet.ServletRequest;
 import javax.servlet.http.Cookie;
@@ -29,21 +29,21 @@ public class MyUtils {
     }
 
     // Сохранить информацию пользователя, который вошел в систему (login) в Session.
-    public static void storeLoginedUser(HttpSession session, User loginedUser) {
-        // В JSP можно получить доступ через ${loginedUser}
-        session.setAttribute("loginedUser", loginedUser);
+    public static void storeLoginedUser(HttpSession session, Users loginedUsers) {
+        // В JSP можно получить доступ через ${loginedUsers}
+        session.setAttribute("loginedUser", loginedUsers);
     }
 
     // Получить информацию пользователя, сохраненная в Session.
-    public static User getLoginedUser(HttpSession session) {
-        User loginedUser = (User) session.getAttribute("loginedUser");
-        return loginedUser;
+    public static Users getLoginedUser(HttpSession session) {
+        Users loginedUsers = (Users) session.getAttribute("loginedUsers");
+        return loginedUsers;
     }
 
     // Сохранить информацию пользователя в Cookie.
-    public static void storeUserCookie(HttpServletResponse response, User user) {
-        System.out.println("Store user cookie");
-        Cookie cookieUserName = new Cookie(ATT_NAME_USER_NAME, user.getLogin());
+    public static void storeUserCookie(HttpServletResponse response, Users users) {
+        System.out.println("Store users cookie");
+        Cookie cookieUserName = new Cookie(ATT_NAME_USER_NAME, users.getLogin());
         // 1 день (Конвертированный в секунды)
         cookieUserName.setMaxAge(24 * 60 * 60);
         response.addCookie(cookieUserName);

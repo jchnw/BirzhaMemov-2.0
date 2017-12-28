@@ -1,14 +1,14 @@
 package app.entities;
 
-public class User {
+public class Users {
     private String login;
     private String password;
     private Integer user_id;
     private Integer user_likes;
 
-    public User(){}
+    public Users(){}
 
-    public User(String login, String password){
+    public Users(String login, String password){
         this.login = login;
         this.password = password;
     }
@@ -48,7 +48,7 @@ public class User {
 
     @Override
     public String toString() {
-        return "User{" +
+        return "Users{" +
                 "name='" + login + '\'' +
                 ", password='" + password + '\'' +
                 '}';
@@ -59,10 +59,10 @@ public class User {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        User user = (User) o;
+        Users users = (Users) o;
 
-        if (login != null ? !login.equals(user.login) : user.login != null) return false;
-        return password != null ? password.equals(user.password) : user.password == null;
+        if (login != null ? !login.equals(users.login) : users.login != null) return false;
+        return password != null ? password.equals(users.password) : users.password == null;
 
     }
 

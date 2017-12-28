@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import app.entities.User;
+import app.entities.Users;
 import app.utils.DBUtils;
 import app.utils.MyUtils;
 
@@ -49,7 +49,7 @@ public class RegistrationServlet extends HttpServlet {
         String rememberMeStr = request.getParameter("rememberMe");
         boolean remember = "Y".equals(rememberMeStr);
 
-        User user = null;
+        Users users = null;
         boolean hasError = false;
         String errorString = null;
 
@@ -59,12 +59,12 @@ public class RegistrationServlet extends HttpServlet {
         } else {
             Connection conn = MyUtils.getStoredConnection(request);
             try {
-                // Найти user в DB.
-                user = DBUtils.findUser(conn, userName, password);
+                // Найти users в DB.
+                users = DBUtils.findUser(conn, userName, password);
 
-                if (user == null) {
+                if (users == null) {
                     hasError = true;
-                    errorString = "User Name or password invalid";
+                    errorString = "Users Name or password invalid";
                 }
             } catch (SQLException e) {
                 e.printStackTrace();
@@ -75,13 +75,13 @@ public class RegistrationServlet extends HttpServlet {
         // В случае, если есть ошибка,
         // forward (перенаправить) к /WEB-INF/registration.jsp
         if (hasError) {
-            user = new User();
-            user.setLogin(userName);
-            user.setPassword(password);
+            users = new Users();
+            users.setLogin(userName);
+            users.setPassword(password);
 
             // Сохранить информацию в request attribute перед forward.
             request.setAttribute("errorString", errorString);
-            request.setAttribute("user", user);
+            request.setAttribute("users", users);
 
             // Forward (перенаправить) на главную страницу
             RequestDispatcher dispatcher //
@@ -94,11 +94,11 @@ public class RegistrationServlet extends HttpServlet {
         // И перенаправить к странице userInfo.
         else {
             HttpSession session = request.getSession();
-            MyUtils.storeLoginedUser(session, user);
+            MyUtils.storeLoginedUser(session, users);
 
             // Если пользователь выбирает функцию "Remember me".
             if (remember) {
-                MyUtils.storeUserCookie(response, user);
+                MyUtils.storeUserCookie(response, users);
             }
             // Наоборот, удалить Cookie
             else {

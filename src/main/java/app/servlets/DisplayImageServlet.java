@@ -12,9 +12,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import app.entities.Memes;
+import app.entities.Pictures;
 import app.model.MySQLConnUtil;
-import app.utils.ConnectionUtil;
 
 // /image?id=123
 @WebServlet(urlPatterns = { "/image" })
@@ -25,7 +24,7 @@ public class DisplayImageServlet extends HttpServlet {
         super();
     }
 
-    private Memes getImageInTable(Connection conn, Long id) throws SQLException {
+    private Pictures getImageInTable(Connection conn, Long id) throws SQLException {
         String sql = "Select p.Id,p.Name,p.Image_Data,p.Image_File_Name "//
                 + " from Person p where p.id = ?";
         PreparedStatement pstm = conn.prepareStatement(sql);
@@ -35,7 +34,7 @@ public class DisplayImageServlet extends HttpServlet {
             String name = rs.getString("Name");
             byte[] imageData = rs.getBytes("Image_Data");
             String imageFileName = rs.getString("Image_File_Name");
-            return new Memes(id, name, imageData, imageFileName);
+            return new Pictures(id, name, imageData, imageFileName);
         }
         return null;
     }
@@ -54,16 +53,16 @@ public class DisplayImageServlet extends HttpServlet {
             } catch (Exception e) {
 
             }
-            Memes memes = getImageInTable(conn, id);
+            Pictures pictures = getImageInTable(conn, id);
 
-            if (memes == null) {
+            if (pictures == null) {
                 // No record found, redirect to default image.
                 response.sendRedirect(request.getContextPath() + "/images/noimage.jpg");
                 return;
             }
 
             // trump.jpg, putin.png
-            String imageFileName = memes.getImageFileName();
+            String imageFileName = pictures.getImageFileName();
             System.out.println("File Name: "+ imageFileName);
 
             // image/jpg
@@ -73,12 +72,12 @@ public class DisplayImageServlet extends HttpServlet {
 
             response.setHeader("Content-Type", contentType);
 
-            response.setHeader("Content-Length", String.valueOf(memes.getImageData().length));
+            response.setHeader("Content-Length", String.valueOf(pictures.getImageData().length));
 
-            response.setHeader("Content-Disposition", "inline; filename=\"" + memes.getImageFileName() + "\"");
+            response.setHeader("Content-Disposition", "inline; filename=\"" + pictures.getImageFileName() + "\"");
 
             // Write image data to Response.
-            response.getOutputStream().write(memes.getImageData());
+            response.getOutputStream().write(pictures.getImageData());
 
         } catch (Exception e) {
             throw new ServletException(e);

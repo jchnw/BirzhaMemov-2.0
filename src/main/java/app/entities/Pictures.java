@@ -10,6 +10,7 @@ public class Pictures {
     private byte[] imageData;
     private String imageFileName;
     private Long user_id;
+    private Long picture_likes;
 
 
     public Pictures() {
@@ -17,12 +18,13 @@ public class Pictures {
     }
 
 
-    public Pictures(Long user_id, Long picture_id,  byte[] imageData, String imageFileName) {
+    public Pictures(Long picture_likes, Long user_id, Long picture_id,  byte[] imageData, String imageFileName) {
         this.picture_id = picture_id;
         //this.name = name;
         this.imageData = imageData;
         this.imageFileName = imageFileName;
         this.user_id = user_id;
+        this.picture_likes = picture_likes;
 
     }
 
@@ -32,6 +34,14 @@ public class Pictures {
 
     public void setPicture_id(Long picture_id) {
         this.picture_id = picture_id;
+    }
+
+    public Long getPicture_likes() {
+        return picture_likes;
+    }
+
+    public void setPicture_likes(Long picture_likes) {
+        this.picture_likes = picture_likes;
     }
 
     public Long getUser_id() {

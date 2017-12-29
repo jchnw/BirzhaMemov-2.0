@@ -25,16 +25,21 @@ public class DisplayImageServlet extends HttpServlet {
     }
 
     private Pictures getImageInTable(Connection conn, Long id) throws SQLException {
-        String sql = "Select p.Id,p.Name,p.Image_Data,p.Image_File_Name "//
-                + " from Person p where p.id = ?";
+        /*String sql = "Select p.Id,p.Name,p.Image_Data,p.Image_File_Name "//
+                + " from Person p where p.id = ?";*/
+        String sql = "Select p.Picture_likes,p.User_id,p.Picture_id,p.ImageData,p.ImageFileName "//
+                        + " from Users p where p.User_id = ?";
         PreparedStatement pstm = conn.prepareStatement(sql);
         pstm.setLong(1, id);
         ResultSet rs = pstm.executeQuery();
         if (rs.next()) {
-            String name = rs.getString("Name");
+            Long picture_likes = rs.getLong("Picture_likes");
+            Long user_id = rs.getLong("User_id");
+            Long picture_id = rs.getLong("Picture_id");
             byte[] imageData = rs.getBytes("Image_Data");
             String imageFileName = rs.getString("Image_File_Name");
-            return new Pictures(id, name, imageData, imageFileName);
+            return new Pictures(picture_likes, user_id, picture_id, imageData, imageFileName);
+            //return new Pictures(id, name, imageData, imageFileName);
         }
         return null;
     }

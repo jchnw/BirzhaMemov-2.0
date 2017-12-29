@@ -19,7 +19,7 @@
 <body>
 
 <header>
-    <a href="index.html"><img src="shapka.png" width="480"></a>
+    <a href="/"><img src="shapka.png" width="480"></a>
 </header>
 <form method='post' action="${pageContext.request.contextPath}/registration">
 
@@ -35,7 +35,7 @@
 
     <div class="form-row">
         <input type="submit" value= "Войти/зарегистрироваться" />
-        <a href="/registration">Отменя</a>
+        <a href="/forgetpassword.html">Забыл пароль?</a>
     </div>
 
 </form>

@@ -39,15 +39,14 @@ public class RegistrationServlet extends HttpServlet {
 
     }
 
-    // Когда пользователь вводит userName & password, и нажимает Submit.
+    // Когда пользователь вводит login & password, и нажимает Submit.
     // Этот метод будет выполнен.
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         String login = request.getParameter("login");
         String password = request.getParameter("password");
-    /*    String rememberMeStr = request.getParameter("rememberMe");
-        boolean remember = "Y".equals(rememberMeStr);*/
+
 
         Users users = null;
         boolean hasError = false;
@@ -55,7 +54,7 @@ public class RegistrationServlet extends HttpServlet {
 
         if (login == null || password == null || login.length() == 0 || password.length() == 0) {
             hasError = true;
-            errorString = "Required username and password!";
+            errorString = "Required login and password!";
         } else {
             Connection conn = MyUtils.getStoredConnection(request);
             try {
@@ -93,7 +92,7 @@ public class RegistrationServlet extends HttpServlet {
         // Сохранить информацию пользователя в Session.
         // И перенаправить к странице userInfo.
         else {
-            // Forward (перенаправить) на главную страницу
+
             RequestDispatcher dispatcher //
                     = this.getServletContext().getRequestDispatcher("/");
 

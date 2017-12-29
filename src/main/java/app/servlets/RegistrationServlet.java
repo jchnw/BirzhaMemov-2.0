@@ -44,23 +44,23 @@ public class RegistrationServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        String userName = request.getParameter("userName");
+        String login = request.getParameter("login");
         String password = request.getParameter("password");
-        String rememberMeStr = request.getParameter("rememberMe");
-        boolean remember = "Y".equals(rememberMeStr);
+    /*    String rememberMeStr = request.getParameter("rememberMe");
+        boolean remember = "Y".equals(rememberMeStr);*/
 
         Users users = null;
         boolean hasError = false;
         String errorString = null;
 
-        if (userName == null || password == null || userName.length() == 0 || password.length() == 0) {
+        if (login == null || password == null || login.length() == 0 || password.length() == 0) {
             hasError = true;
             errorString = "Required username and password!";
         } else {
             Connection conn = MyUtils.getStoredConnection(request);
             try {
                 // Найти users в DB.
-                users = DBUtils.findUser(conn, userName, password);
+                users = DBUtils.findUser(conn, login, password);
 
                 if (users == null) {
                     hasError = true;
@@ -76,7 +76,7 @@ public class RegistrationServlet extends HttpServlet {
         // forward (перенаправить) к /WEB-INF/registration.jsp
         if (hasError) {
             users = new Users();
-            users.setLogin(userName);
+            users.setLogin(login);
             users.setPassword(password);
 
             // Сохранить информацию в request attribute перед forward.
@@ -93,16 +93,11 @@ public class RegistrationServlet extends HttpServlet {
         // Сохранить информацию пользователя в Session.
         // И перенаправить к странице userInfo.
         else {
-            HttpSession session = request.getSession();
-            MyUtils.storeLoginedUser(session, users);
+            // Forward (перенаправить) на главную страницу
+            RequestDispatcher dispatcher //
+                    = this.getServletContext().getRequestDispatcher("/");
 
-            // Если пользователь выбирает функцию "Remember me".
-            if (remember) {
-                MyUtils.storeUserCookie(response, users);
-            }
-            // Наоборот, удалить Cookie
-            else {
-                MyUtils.deleteUserCookie(response);
+            dispatcher.forward(request, response);
             }
 
             // Redirect (Перенаправить) на страницу /home.

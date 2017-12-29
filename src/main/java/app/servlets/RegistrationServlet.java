@@ -29,11 +29,10 @@ public class RegistrationServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-        // Forward (перенаправить) к странице /WEB-INF/views/loginView.jsp
-        // (Пользователь не может прямо получить доступ
-        // к страницам JSP расположенные в папке WEB-INF).
+        // Forward (перенаправить) к странице /registration
+
         RequestDispatcher dispatcher //
-                = this.getServletContext().getRequestDispatcher("/WEB-INF/registration.jsp");
+                = this.getServletContext().getRequestDispatcher("/registration");
 
         dispatcher.forward(request, response);
 
@@ -85,7 +84,7 @@ public class RegistrationServlet extends HttpServlet {
 
             // Forward (перенаправить) на главную страницу
             RequestDispatcher dispatcher //
-                    = this.getServletContext().getRequestDispatcher("/WEB-INF/indexjsp.jsp");
+                    = this.getServletContext().getRequestDispatcher("/");
 
             dispatcher.forward(request, response);
         }

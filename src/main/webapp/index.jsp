@@ -55,7 +55,7 @@
             <ul class="menu__drop">
                 <li><a href="zduki.jsp">Мои здюки</a></li>
                 <li><a href="notb.jsp">Пока не боян</a></li>
-                <li><a href="upload.jsp">Я твою мамку эчпочмак</a></li>
+                <li><a href="#">Я твою мамку эчпочмак</a></li>
             </ul>
         </li>
     </ul>

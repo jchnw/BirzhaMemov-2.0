@@ -7,43 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d8c2d409-9c41-4e72-9461-b82eecc2b2a4" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/servlets/RegistrationServlet.java" afterPath="$PROJECT_DIR$/src/main/java/app/servlets/RegistrationServlet.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/servlets/UploadResultServlet.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/15_1.html" afterPath="$PROJECT_DIR$/src/main/webapp/15_1.html" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/15_2.html" afterPath="$PROJECT_DIR$/src/main/webapp/15_2.html" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/15_3.html" afterPath="$PROJECT_DIR$/src/main/webapp/15_3.html" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/15_4.html" afterPath="$PROJECT_DIR$/src/main/webapp/15_4.html" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/_nav.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/_nav.jsp" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/forgetpassword.html" afterPath="$PROJECT_DIR$/src/main/webapp/forgetpassword.html" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/kot_1.html" afterPath="$PROJECT_DIR$/src/main/webapp/kot_1.html" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/kot_2.html" afterPath="$PROJECT_DIR$/src/main/webapp/kot_2.html" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/kot_3.html" afterPath="$PROJECT_DIR$/src/main/webapp/kot_3.html" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/notb.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/notb.jsp" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/registration.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/registration.jsp" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/upload.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/upload.jsp" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/uploadResults.jsp" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/zduki.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/zduki.jsp" />
-      <change beforePath="$PROJECT_DIR$/target/BirzhaMemasikov/15_1.html" afterPath="$PROJECT_DIR$/target/BirzhaMemasikov/15_1.html" />
-      <change beforePath="$PROJECT_DIR$/target/BirzhaMemasikov/15_2.html" afterPath="$PROJECT_DIR$/target/BirzhaMemasikov/15_2.html" />
-      <change beforePath="$PROJECT_DIR$/target/BirzhaMemasikov/15_3.html" afterPath="$PROJECT_DIR$/target/BirzhaMemasikov/15_3.html" />
-      <change beforePath="$PROJECT_DIR$/target/BirzhaMemasikov/15_4.html" afterPath="$PROJECT_DIR$/target/BirzhaMemasikov/15_4.html" />
-      <change beforePath="$PROJECT_DIR$/target/BirzhaMemasikov/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/target/BirzhaMemasikov/META-INF/MANIFEST.MF" />
-      <change beforePath="$PROJECT_DIR$/target/BirzhaMemasikov/WEB-INF/classes/app/servlets/RegistrationServlet.class" afterPath="$PROJECT_DIR$/target/BirzhaMemasikov/WEB-INF/classes/app/servlets/RegistrationServlet.class" />
-      <change beforePath="$PROJECT_DIR$/target/BirzhaMemasikov/WEB-INF/classes/app/servlets/UploadResultServlet.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/BirzhaMemasikov/_nav.jsp" afterPath="$PROJECT_DIR$/target/BirzhaMemasikov/_nav.jsp" />
-      <change beforePath="$PROJECT_DIR$/target/BirzhaMemasikov/forgetpassword.html" afterPath="$PROJECT_DIR$/target/BirzhaMemasikov/forgetpassword.html" />
-      <change beforePath="$PROJECT_DIR$/target/BirzhaMemasikov/index.jsp" afterPath="$PROJECT_DIR$/target/BirzhaMemasikov/index.jsp" />
-      <change beforePath="$PROJECT_DIR$/target/BirzhaMemasikov/kot_1.html" afterPath="$PROJECT_DIR$/target/BirzhaMemasikov/kot_1.html" />
-      <change beforePath="$PROJECT_DIR$/target/BirzhaMemasikov/kot_2.html" afterPath="$PROJECT_DIR$/target/BirzhaMemasikov/kot_2.html" />
-      <change beforePath="$PROJECT_DIR$/target/BirzhaMemasikov/kot_3.html" afterPath="$PROJECT_DIR$/target/BirzhaMemasikov/kot_3.html" />
-      <change beforePath="$PROJECT_DIR$/target/BirzhaMemasikov/notb.jsp" afterPath="$PROJECT_DIR$/target/BirzhaMemasikov/notb.jsp" />
-      <change beforePath="$PROJECT_DIR$/target/BirzhaMemasikov/registration.jsp" afterPath="$PROJECT_DIR$/target/BirzhaMemasikov/registration.jsp" />
-      <change beforePath="$PROJECT_DIR$/target/BirzhaMemasikov/upload.jsp" afterPath="$PROJECT_DIR$/target/BirzhaMemasikov/upload.jsp" />
-      <change beforePath="$PROJECT_DIR$/target/BirzhaMemasikov/zduki.jsp" afterPath="$PROJECT_DIR$/target/BirzhaMemasikov/zduki.jsp" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/servlets/RegistrationServlet.class" afterPath="$PROJECT_DIR$/target/classes/app/servlets/RegistrationServlet.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/app/servlets/UploadResultServlet.class" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -80,11 +44,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="15_4.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="15_4.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/15_4.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+            <state relative-caret-position="42">
+              <caret line="5" column="30" lean-forward="true" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -100,7 +64,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="forgetpassword.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="forgetpassword.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/forgetpassword.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
@@ -198,7 +162,6 @@
         <option value="$PROJECT_DIR$/src/main/webapp/15_1.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/15_2.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/15_3.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/15_4.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/kot_1.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/kot_2.html" />
@@ -210,6 +173,7 @@
         <option value="$PROJECT_DIR$/src/main/java/app/servlets/RegistrationServlet.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/_nav.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/forgetpassword.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/15_4.html" />
       </list>
     </option>
   </component>
@@ -521,12 +485,12 @@
       <workItem from="1514475521675" duration="247000" />
       <workItem from="1514499728609" duration="13142000" />
       <workItem from="1514516758706" duration="1316000" />
-      <workItem from="1514547353010" duration="1621000" />
+      <workItem from="1514547353010" duration="1712000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20907000" />
+    <option name="totallyTimeSpent" value="20998000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -905,14 +869,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/15_4.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/_nav.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -933,6 +889,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="9" lean-forward="false" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/15_4.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="5" column="30" lean-forward="true" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
           <folding />
         </state>
       </provider>

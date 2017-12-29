@@ -4,25 +4,28 @@ import app.entities.Users;
 
 
 public class Pictures {
+    private Long picture_likes;
+    private Long user_id;
     private Long picture_id;
     //private String name;
     //test
     private byte[] imageData;
     private String imageFileName;
-    private Long user_id;
-    private Long picture_likes;
+
+
 
 
     public Pictures() {}
 
 
     public Pictures(Long picture_likes, Long user_id, Long picture_id,  byte[] imageData, String imageFileName) {
+
+        this.picture_likes = picture_likes;
+        this.user_id = user_id;
         this.picture_id = picture_id;
         //this.name = name;
         this.imageData = imageData;
         this.imageFileName = imageFileName;
-        this.user_id = user_id;
-        this.picture_likes = picture_likes;
 
     }
 

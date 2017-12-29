@@ -19,7 +19,7 @@
 <body>
 
 <header>
-    <a href="index.html"><img src="shapka.png" width="480"></a>
+    <a href="/"><img src="shapka.png" width="480"></a>
 </header>
 
 <form method="get" action="/search" target="_blank" style="margin-left: 1000px;">
@@ -61,8 +61,8 @@
         <li class="menu__list"><a href="#">Запостить мем</a>
             <ul class="menu__drop">
                 <li><a href="zduki.jsp">Мои здюки</a></li>
-                <li><a href="#">Пока не боян</a></li>
-                <li><a href="#">Я твою мамку эчпочмак</a></li>
+                <li><a href="notb.jsp">Пока не боян</a></li>
+                <li><a href="upload.jsp">Я твою мамку эчпочмак</a></li>
             </ul>
         </li>
     </ul>

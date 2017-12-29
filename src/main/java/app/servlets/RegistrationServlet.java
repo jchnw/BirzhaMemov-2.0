@@ -46,8 +46,7 @@ public class RegistrationServlet extends HttpServlet {
             throws ServletException, IOException {
         String login = request.getParameter("login");
         String password = request.getParameter("password");
-/*        String rememberMeStr = request.getParameter("rememberMe");
-        boolean remember = "Y".equals(rememberMeStr);*/
+
 
         Users users = null;
         boolean hasError = false;
@@ -93,6 +92,7 @@ public class RegistrationServlet extends HttpServlet {
         // Сохранить информацию пользователя в Session.
         // И перенаправить к странице userInfo.
         else {
+
             RequestDispatcher dispatcher //
                     = this.getServletContext().getRequestDispatcher("/");
 

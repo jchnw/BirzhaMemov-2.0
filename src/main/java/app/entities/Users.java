@@ -8,9 +8,11 @@ public class Users {
 
     public Users(){}
 
-    public Users(String login, String password){
+    public Users(String login, String password, Integer user_likes, Integer user_id){
         this.login = login;
         this.password = password;
+        this.user_likes = user_likes;
+        this.user_id = user_id;
     }
 
     public String getLogin(){

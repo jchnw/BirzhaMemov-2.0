@@ -21,21 +21,8 @@
     <a href="index.html"><img src="shapka.png" width="480"></a>
 
     <div class="form-row">
-        <form method="post" action="${pageContext.request.contextPath}/uploadFile"
-              enctype="multipart/form-data">
-
-            Select file to upload:
-            <br />
-            <input type="file" name="file"  />
-            <br />
-            <input type="file" name="file" />
-            <br />
-            Description:
-            <br />
-            <input type="text" name="description" size="100" />
-            <br />
-            <br />
-            <input type="submit" value="Upload" />
+        <h3>Upload has been done successfully!</h3>
+        <a href="${pageContext.request.contextPath}/uploadFile">Continue Upload</a>
         </form>
     </div>
 </header>
